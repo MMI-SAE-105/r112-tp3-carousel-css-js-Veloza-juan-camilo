@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : Veloza Arcila
+- prénom : Juan Camilo
+- URL Netlify : https://bespoke-jelly-9aed69.netlify.app
 
 # Travail
 
