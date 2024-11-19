@@ -3,6 +3,8 @@
 
 const carousel = document.querySelector('.carousel__container');
 const carouselItems = document.querySelector('.carousel__constrols');
+const premierItem = document.querySelector(".carousel__item");
+const scrollAmount = premierItem.clientWidth;
 
 // carousel.scrollLeft = 520;
 
@@ -18,10 +20,12 @@ const nextButton = document.querySelector('.carousel__button--next');
 
 if (carousel) {
     prevButton.addEventListener('click', () => {
-        carousel.scrollBy({ left: -560, behavior: "smooth" });
+        carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 });
     nextButton.addEventListener('click', () => {
-        carousel = carousel.scrollBy({ left: +560, behavior: "smooth" });
+        carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
 
     });
 }
+
+
